@@ -36,7 +36,7 @@ import { CreateRecipeFormComponent } from './components/create-recipe-form/creat
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

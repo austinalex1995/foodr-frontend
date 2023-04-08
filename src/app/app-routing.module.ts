@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { FavoriteRecipeComponent } from './components/favorite-recipe/favorite-recipe.component';
+
 import { CreateRecipeComponent } from './pages/create-recipe/create-recipe.component';
+import { FavoriteRecipesComponent } from './pages/favorite-recipes/favorite-recipes.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MyRecipesComponent } from './pages/my-recipes/my-recipes.component';
 import { RecipeSwipeComponent } from './pages/recipe-swipe/recipe-swipe.component';
@@ -10,27 +12,27 @@ import { SignupComponent } from './pages/signup/signup.component';
 
 const routes: Routes = [
   {
-    path: '/signup',
+    path: 'signup',
     component: SignupComponent
   },
   {
-    path: '/recipes',
+    path: 'recipes',
     component: RecipeSwipeComponent
   },
   {
-    path: '/create_recipe',
+    path: 'create_recipe',
     component: CreateRecipeComponent
   },
   {
-    path: '/favorite_recipes',
-    component: FavoriteRecipeComponent
+    path: 'favorite_recipes',
+    component: FavoriteRecipesComponent
   },
   {
-    path: '/my_recipes',
+    path: 'my_recipes',
     component: MyRecipesComponent
   },
   {
-    path: '/settings',
+    path: 'settings',
     component: SettingsComponent
   },
   {
@@ -40,7 +42,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [BrowserModule, RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

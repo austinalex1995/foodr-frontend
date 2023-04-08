@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: cornsilk;
+    border-radius: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkred;
+}
