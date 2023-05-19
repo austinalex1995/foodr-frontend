@@ -16,7 +16,8 @@ import { FavoriteRecipeComponent } from './components/favorite-recipe/favorite-r
 import { SwipeRecipeComponent } from './components/swipe-recipe/swipe-recipe.component';
 import { FavoriteRecipeListComponent } from './components/favorite-recipe-list/favorite-recipe-list.component';
 import { CreateRecipeFormComponent } from './components/create-recipe-form/create-recipe-form.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
