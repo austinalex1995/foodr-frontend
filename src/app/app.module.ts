@@ -18,6 +18,7 @@ import { FavoriteRecipeListComponent } from './components/favorite-recipe-list/f
 import { CreateRecipeFormComponent } from './components/create-recipe-form/create-recipe-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     FavoriteRecipeComponent,
     SwipeRecipeComponent,
     FavoriteRecipeListComponent,
-    CreateRecipeFormComponent
+    CreateRecipeFormComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

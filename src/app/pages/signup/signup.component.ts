@@ -41,7 +41,7 @@ export class SignupComponent {
             id: returnedUser.userId!
           }
         }
-        this.router.navigate(["/my_recipes"], navigationExtras);
+        this.router.navigate(["/recipes"], navigationExtras);
 
       }
 
