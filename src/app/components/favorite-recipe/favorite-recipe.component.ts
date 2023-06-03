@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Recipe } from 'src/app/models/Recipe';
 
 @Component({
   selector: 'app-favorite-recipe',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./favorite-recipe.component.css']
 })
 export class FavoriteRecipeComponent {
+
+  /**
+   * Member Variables
+   */
+
+  @Input()
+  recipe : Recipe = { };
+
+  
+
+  /**
+   * Class Methods
+   */
 
 }

@@ -8,20 +8,4 @@ import { Router } from '@angular/router';
 })
 export class NavBarComponent {
 
-  /**
-   * Member Variables
-   */
-
-  /**
-   * Constructor
-   */
-
-  constructor() { }
-
-
-
-  /**
-   * Class Methods
-   */
-
 }

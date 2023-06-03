@@ -1,1 +1,3 @@
-<p>favorite-recipe-list works!</p>
+<div *ngFor = "let recipe of recipes">
+    <app-favorite-recipe [recipe]="recipe"></app-favorite-recipe>
+</div>

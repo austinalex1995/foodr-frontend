@@ -1,0 +1,9 @@
+.parent {
+    width: 50%;
+    margin: auto;
+}
+
+.child {
+    float: left;
+    width: 50%;
+}
