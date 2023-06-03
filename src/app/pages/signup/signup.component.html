@@ -1,1 +1,9 @@
-<p>signup works!</p>
+<div>
+    <p>FoodR</p>
+</div>
+<div>
+    <app-signup-form (registerEventEmitter)="attemptRegister($event)"></app-signup-form>
+</div>
+<div>
+    <button (click)="transitionToLogin()">Cancel</button>
+</div>

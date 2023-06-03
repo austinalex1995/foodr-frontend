@@ -1,1 +1,7 @@
-<p>signup-form works!</p>
+<form [formGroup]="form" (ngSubmit)="attemptRegister()">
+    <input type="email" formControlName="email" placeholder="Email"><br><br>
+    <input type="email" formControlName="confirmEmail" placeholder="Confirm Email"><br><br>
+    <input type="password" formControlName="password" placeholder="Password"><br><br>
+    <input type="password" formControlName="confirmPassword" placeholder="Confirm Password"><br><br>
+    <button type="submit">Register User</button>
+</form>

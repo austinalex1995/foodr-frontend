@@ -39,6 +39,7 @@ export class LoginFormComponent {
     let data = this.form.value;
     console.log(data.email);
     console.log(data.password);
+    
     if (data.email != null && data.password != null) {
       const nonNullEmail : string = data.email as string;
       const nonNullPassword : string = data.password as string;
