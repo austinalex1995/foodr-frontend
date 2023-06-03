@@ -1,7 +1,10 @@
 <app-nav-bar></app-nav-bar>
 <br>
 <div class="parent">
-    <div class="child">
+    <div class="child" *ngIf="recipes.length == 0">
+        <p>There are no recipes to display</p>
+    </div>
+    <div class="child" *ngIf="recipes.length > 0">
         <app-favorite-recipe-list [recipes]="recipes"></app-favorite-recipe-list>
     </div>
     <div class="child">

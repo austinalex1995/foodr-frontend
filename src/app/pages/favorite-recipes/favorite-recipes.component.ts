@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from 'src/app/models/Recipe';
 
 @Component({
   selector: 'app-favorite-recipes',
@@ -6,5 +7,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./favorite-recipes.component.css']
 })
 export class FavoriteRecipesComponent {
+
+  /**
+   * Member Variables
+   */
+
+  recipes : Recipe[] = [];
+
+
+
+  /**
+   * Constructor
+   */
+
+  constructor() { }
+
+
+
+  /**
+   * Class Methods
+   */
 
 }
